@@ -1,0 +1,3 @@
+class DeleteComando implements Comando {
+    
+}

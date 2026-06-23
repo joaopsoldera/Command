@@ -1,0 +1,3 @@
+class NewComando implements Comando {
+    
+}

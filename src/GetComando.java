@@ -1,0 +1,3 @@
+class GetComando implements Comando {
+    
+}
