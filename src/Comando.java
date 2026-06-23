@@ -1,3 +1,3 @@
 interface Comando {
-    public Object executar(Objetct arg);
+    public Object executar(Pessoa arg);
 }

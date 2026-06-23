@@ -1,13 +1,12 @@
-class GetComando implements Comando {
+class DeleteAllComando implements Comando {
     private BancoDeDados db;
 
-    public GetComando(BancoDeDados bd) {
+    public DeleteAllComando(BancoDeDados bd) {
         this.setDB(bd);
     }
 
     public Object executar(Pessoa arg) {
-        int id = arg.getId();
-        return this.getDB().getPessoa(id);
+        return this.getDB().deleteAll();
     }
 
     //#region Getters e Setters

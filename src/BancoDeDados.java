@@ -1,20 +1,20 @@
 import java.util.Map;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Iterator;
+import java.util.ArrayList;
 
 public class BancoDeDados {
-    private Map<integer, Pessoa> database = new HashMap<>();
+    private Map<Integer, Pessoa> database = new HashMap<>();
     public BancoDeDados() {}
 
-    public Object newPessoa(int id, string Nome) {
+    public Object newPessoa(int id, String Nome) {
         if (database.get(id) == null) {
-            Pessoa p = new Pessoa(id, nome);
+            Pessoa p = new Pessoa(id, Nome);
             database.put(id, p);
 
             return p;
         }
-        return null;  
+        return null;
     }
 
     public Object deletePessoa(int id) {
@@ -37,7 +37,7 @@ public class BancoDeDados {
     }
 
     public Object getAll() {
-        List<Pessoa> lista = new List<Pessoa>();
+        List<Pessoa> lista = new ArrayList<Pessoa>();
 
         for (Pessoa p : database.values()) {
             lista.add(p);

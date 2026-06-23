@@ -5,7 +5,9 @@ class NewComando implements Comando {
         this.setDB(bd);
     }
 
-    public Object executar(int id, string nome) {
+    public Object executar(Pessoa arg) {
+        int id = arg.getId();
+        String nome = arg.getNome();
         return this.getDB().newPessoa(id, nome);
     }
 

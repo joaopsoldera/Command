@@ -5,7 +5,8 @@ class DeleteComando implements Comando {
         this.setDB(bd);
     }
 
-    public Object executar(int id) {
+    public Object executar(Pessoa arg) {
+        int id = arg.getId();
         return this.getDB().deletePessoa(id);
     }
 

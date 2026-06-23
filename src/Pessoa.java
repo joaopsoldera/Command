@@ -1,8 +1,8 @@
 public class Pessoa {
     private int id;
-    private string nome;
+    private String nome;
 
-    public Pessoa(int id, string nome) {}
+    public Pessoa(int id, String nome) {}
 
     //#region Getters e Setters
     public int getId() {
@@ -13,11 +13,11 @@ public class Pessoa {
         this.id = id;
     }
 
-    public string getNome() {
+    public String getNome() {
         return this.nome;
     }
 
-    public void setNome(string nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
     //#endregion
