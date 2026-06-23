@@ -1,3 +1,3 @@
-public abstract class Comando {
-    
+interface Comando {
+    public void executar();
 }
