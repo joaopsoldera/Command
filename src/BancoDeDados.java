@@ -9,18 +9,27 @@ public class BancoDeDados {
 
     public Object newPessoa(int id, string Nome) {
         if (database.get(id) == null) {
-            database.put(id, new Pessoa(id, nome));
+            Pessoa p = new Pessoa(id, nome);
+            database.put(id, p);
+
+            return p;
         }
+        return null;  
     }
 
     public Object deletePessoa(int id) {
-        if (database.get(id) != null) {
+        Pessoa p = database.get(id);
+        if (p != null) {
             database.remove(id);
         }
+
+        return p;
     }
 
     public Object deleteAll() {
         database.clear();
+
+        return "Banco de Dados limpo!";
     }
 
     public Object getPessoa(int id) {
